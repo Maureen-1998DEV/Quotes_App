@@ -7,7 +7,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./qoutes-detail.component.css']
 })
 export class QoutesDetailComponent implements OnInit {
-  @Input()quotes!: Quotes;
+
   @Output() isDelete = new EventEmitter<boolean>();
 
   @Output() isRating = new EventEmitter<boolean>();
@@ -20,7 +20,7 @@ export class QoutesDetailComponent implements OnInit {
   }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
