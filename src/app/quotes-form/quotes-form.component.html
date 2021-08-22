@@ -3,14 +3,14 @@
 <br>   
 <form (ngSubmit)='addNewQuote()' #quoteForm='ngForm'>
 <div class=" col-6 mb-5">
-    <input type="text" class="form-control form-control-lg " placeholder="Title" id="title" [(ngModel)]="NewQuotes.title" name="title" #title="ngModel" required>
+    <input type="text" class="form-control form-control-lg " placeholder="Title" id="title" [(ngModel)]="newQuotes.title" name="title" #title='ngModel' required>
     <div [hidden]="title.valid || title.pristine" class="alert alert-danger"><h3> Tittle required</h3></div>
 </div>
 <div class="  col-6 mb-5 ">
-    <input type="text" class="form-control" placeholder="name" class="name" [(ngModel)]="NewQuotes.name" name="name" #name="ngModel" required>
+    <input type="text" class="form-control" placeholder="name" class="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" required>
     <div [hidden]="name.valid || name.pristine" class="alert alert-danger"><h3>Name required</h3></div>
 </div><div class="mb-5">
-    <textarea class="form-control"  rows="5" placeholder="Write your quote" class="enter" [()ngModel]="NewQuotes.enter" #enter="ngModel" required ></textarea>
+    <textarea class="form-control"  rows="5" placeholder="Write your quote" class="enter" [()ngModel]="newQuotes.enter" #enter="ngModel" required ></textarea>
     <div [hidden]="enter.valid || enter.pristine" class="alert alert-danger"><h3>quote required</h3></div>
   </div>
   <div class=text-center>

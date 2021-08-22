@@ -8,16 +8,23 @@ import { Quotes } from '../quotes';
 })
 export class QoutesDetailComponent implements OnInit {
 
+  @Input()
+  quote!: Quotes;
+  likes:number=0;
+  dislikes:number=0;
+  increaseRating(){
+    this.likes++;
+  }
+  decreaseRating(){
+    this.dislikes++;
+  }
   @Output() isDelete = new EventEmitter<boolean>();
-
-  @Output() isRating = new EventEmitter<boolean>();
 
   deleteQuote(complete:boolean){
     this.isDelete.emit(complete);
   }
-  increaseRating(rating:boolean) {
-    this.isRating.emit(rating);
-  }
+
+  
   constructor() { }
 
   ngOnInit(){

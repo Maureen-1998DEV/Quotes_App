@@ -1,6 +1,5 @@
 
 import { Component, OnInit } from '@angular/core';
-import { time } from 'console';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -10,7 +9,7 @@ import { Quotes } from '../quotes';
 })
 export class QoutesComponent implements OnInit {
   quotes:Quotes[] = [
-   new Quotes(1,'education','Maureen','Education is key to sucess',new Date (2021,8,22),1,3) 
+   new Quotes(1,'education','Maureen','Education is key to sucess',new Date (2021,8,22)) 
   ]
   addnewQuotes(quote:Quotes){
     let quoteLength = this.quotes.length;
@@ -18,6 +17,13 @@ export class QoutesComponent implements OnInit {
     quote.datePublished = new Date(quote.datePublished)
     this.quotes.push(quote)
   }
+  deleteQuote(isDelete: any, index: number){
+    if (isDelete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
  
   constructor() { }
 

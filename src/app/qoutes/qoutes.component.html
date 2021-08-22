@@ -13,8 +13,8 @@
             <div class="panel panel-info" >
               <div class="panel-body">
                 <div id="{{i}}">
-                  <h3><span [appLikes]="quote.most">{{quotes.title}}</span></h3>
-                  <app-quotes-detail [quote]='quote' (isRting)='increaseRating($event,i)' (isDelete)='deleteQuote($event,i)'></app-quotes-detail>
+                 <h3><span >{{quotes.title}}</span></h3>
+                  <app-quotes-detail [quotes]='quotes' (isDelete)='deleteQuote($event,i)'></app-quotes-detail>
                 </div>
               </div>
             </div>
