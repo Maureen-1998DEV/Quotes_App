@@ -6,7 +6,7 @@ import { Quotes } from '../quotes';
   templateUrl: './qoutes-detail.component.html',
   styleUrls: ['./qoutes-detail.component.css']
 })
-export class QoutesDetailComponent implements OnInit {
+export class QuotesDetailComponent implements OnInit {
 
   @Input() quote: Quotes;
   likes:number=0;
