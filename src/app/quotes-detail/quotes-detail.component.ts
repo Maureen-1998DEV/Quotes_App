@@ -23,10 +23,9 @@ export class QoutesDetailComponent implements OnInit {
     this.isDelete.emit(complete);
   }
 
-  
   constructor() { }
 
-  ngOnInit(){
+  ngOnInit(): void {
   }
 
 }

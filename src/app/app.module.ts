@@ -6,18 +6,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QoutesComponent } from './qoutes/qoutes.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
-import { QoutesDetailComponent } from './qoutes-detail/qoutes-detail.component';
 import { LikesDirective } from './likes.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { QuotesDetailComponent } from './quotes-detail/quotes-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QoutesComponent,
-    QoutesDetailComponent,
     QuotesFormComponent,
     LikesDirective,
-    DateCountPipe
+    DateCountPipe,
+    QuotesDetailComponent
   ],
   imports: [
     BrowserModule,
