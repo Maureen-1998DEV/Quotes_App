@@ -9,7 +9,9 @@ import { Quotes } from '../quotes';
 })
 export class QoutesComponent implements OnInit {
   quotes:Quotes[] = [
-   new Quotes(1,'education','Maureen','Education is key to sucess',new Date (2021,8,22)) 
+   new Quotes(1,'education','Maureen','Education is key to sucess',new Date (2021,8,22)), 
+   new Quotes(1,'love','Leila','love lies',new Date (2021,8,22)),
+   new Quotes(1,'life','Marion','life is what happens to you when you are busy making other plans',new Date (2021,8,22))
   ]
   addnewQuotes(quote:Quotes){
     let quoteLength = this.quotes.length;
@@ -17,15 +19,16 @@ export class QoutesComponent implements OnInit {
     quote.datePublished = new Date(quote.datePublished)
     this.quotes.push(quote)
   }
-  deleteQuote(isDelete: any, index: number){
+  deleteQuote(isDelete, index){
     if (isDelete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
-
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`);
       if (toDelete){
         this.quotes.splice(index,1)
       }
+    }
+  }
  
-  constructor() { }
+  constructor () { }
 
   ngOnInit(){
   }

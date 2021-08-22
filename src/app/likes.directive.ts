@@ -1,4 +1,4 @@
-import { Directive, ElementRef,Input,OnInit,HostListener } from '@angular/core';
+import { Directive, ElementRef,Input,HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appLikes]'

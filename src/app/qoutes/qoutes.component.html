@@ -3,7 +3,7 @@
     <h1 class="text-center">Quotes</h1>
     <div class="row">
       <div class="col-md-6">
-          <app-quotes-form (addQuotes)='addnewQuotes($event)'></app-quotes-form>
+          <app-quotes-form (addQuotes)='NewQuotes($event)'></app-quotes-form>
       </div>  
     </div>
     <div class="col-md-8">
@@ -13,8 +13,8 @@
             <div class="panel panel-info" >
               <div class="panel-body">
                 <div id="{{i}}">
-                 <h3><span >{{quotes.title}}</span></h3>
-                  <app-quotes-detail [quotes]='quotes' (isDelete)='deleteQuote($event,i)'></app-quotes-detail>
+                  <h1><span applikes>{{quote.title}} on {{quote.datePublished|dateCount}}</span></h1>
+                  <app-quotes-detail [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quotes-detail>
                 </div>
               </div>
             </div>
