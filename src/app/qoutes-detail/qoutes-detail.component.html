@@ -1,0 +1,16 @@
+
+<blockquote >
+    <cite >{{quotes.author}}</cite>
+  <p>{{quotes.entry}}</p>
+  <footer>Author: </footer>
+</blockquote>
+<h4>Date Posted: {{quotes.time|time}}</h4>
+
+<i class="fa fa-thumbs-o-up"(click)='decreaseRating(false)' aria-hidden="true">{{quotes.likes}}
+    
+</i>
+  <i class="far fa-thumbs-o-down" (click)="decreaseRating(true)">{{quote.dislike}}</i>
+
+  <br>
+  <button class="btn btn-danger" (click)= "deleteQuote(true)">Delete</button>
+

@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h3{
+    color: rgb(43, 226, 89);
+    font-size: 300%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container-sm{
+    background-color: rgba(0,35,82,0.7);
+    height: 70vh;
+}
+form{
+    padding: 80px;
+}
