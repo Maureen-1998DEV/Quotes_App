@@ -1,7 +1,7 @@
 <div class="container-sm mt-5 pt-5 pl-5">
 <h3 class="text-center">Publish Your Quote</h3> 
 <br>   
-<form (ngSubmit)='newQuotes()' #quoteForm='ngForm'>
+<form (ngSubmit)='submitQuotes()' #quoteForm='ngForm'>
 <div class=" col-6 mb-5">
     <input type="text" class="form-control  " placeholder="Title" id="title" [(ngModel)]="newQuotes.title" name="title" #title='ngModel' required>
     <div [hidden]="title.valid || title.pristine" class="alert alert-danger"><h3> Tittle required</h3></div>
@@ -14,7 +14,7 @@
     <div [hidden]="enter.valid || enter.pristine" class="alert alert-danger"><h3>quote required</h3></div>
   </div>
   <div class=text-center>
-    <button type="button" class="btn btn-success btn-lg">publish quote</button>
+    <button type="submit" class="btn btn-warning btn-lg">publish quote</button>
   </div>
   
 

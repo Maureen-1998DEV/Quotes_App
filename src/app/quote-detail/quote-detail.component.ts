@@ -2,11 +2,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
-  selector: 'app-qoutes-detail',
-  templateUrl: './qoutes-detail.component.html',
-  styleUrls: ['./qoutes-detail.component.css']
+  selector: 'app-quote-detail',
+  templateUrl: './quote-detail.component.html',
+  styleUrls: ['./quote-detail.component.css']
 })
-export class QuotesDetailComponent implements OnInit {
+export class QuoteDetailComponent implements OnInit {
+  
 
   @Input() quote: Quotes;
   likes:number=0;
@@ -21,11 +22,15 @@ export class QuotesDetailComponent implements OnInit {
 
   deleteQuote(complete:boolean){
     this.isDelete.emit(complete);
+
+   }
+ constructor() { }
+
+ ngOnInit(){
   }
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+
 
 }
+
