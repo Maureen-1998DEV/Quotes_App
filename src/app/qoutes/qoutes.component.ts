@@ -21,7 +21,7 @@ export class QoutesComponent implements OnInit {
   }
   deleteQuote(isDelete, index){
     if (isDelete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`);
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].enter}?`);
       if (toDelete){
         this.quotes.splice(index,1)
       }

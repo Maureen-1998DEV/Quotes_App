@@ -1,0 +1,10 @@
+.details{
+    padding-bottom: 10%;
+    background-color: rgba(178, 190, 187, 0.7);
+    padding-left: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(4, 4, 49);
+}
+p{
+    font-size: 190%;
+}
