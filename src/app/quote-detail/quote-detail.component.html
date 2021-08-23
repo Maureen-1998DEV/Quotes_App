@@ -1,13 +1,16 @@
+
+
 <div class="details">
   <h2>Title:{{quote.title}}</h2>
   <p>  Quote:{{quote.enter}}</p>
   <h4>Author: {{quote.name}}</h4>
   <h4>Date Posted:{{quote.datePublished}}</h4>
 
-<i class="fa fa-thumbs-o-up"(click)="increaseRating()" aria-hidden="true">
-    
+<i class="fa fa-thumbs-up"(click)="increaseRating()" aria-hidden="true">
+ {{likes }}   
 </i>
-  <i class="far fa-thumbs-o-down" (click)="decreaseRating()"></i>
+<br>
+  <i class="fa fa-thumbs-down" (click)="decreaseRating()">{{dislikes}}</i>
 
   <br>
   <button class="btn btn-danger" (click)= "deleteQuote(true)">Delete</button>
