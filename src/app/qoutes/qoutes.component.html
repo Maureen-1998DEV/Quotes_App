@@ -5,21 +5,22 @@
       <div class="col-md-6">
           <app-quotes-form (addQuotes)='addnewQuotes($event)'></app-quotes-form>
       </div>  
-    </div>
-    <div class="col-md-8">
+    
+    <div class="col-md-6">
         <div *ngFor="let quote of quotes;let i = index">
-          <div class="row">
-        
+          <div class="col-md-8">
             <div class="panel panel-info" >
               <div class="panel-body">
                 <div id="{{i}}">
-                  <h1><span applikes>{{quote.title}} on {{quote.datePublished|dateCount}}</span></h1>
+                  <h2><span applikes>{{quote.title}}</span></h2>
+                  <br>
                   <app-quote-detail [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quote-detail>
                 </div>
               </div>
             </div>
           </div>
         </div>
+    </div>
     </div>
   </div>
 </div>
