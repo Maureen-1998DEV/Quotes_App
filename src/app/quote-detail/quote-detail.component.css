@@ -8,3 +8,12 @@
 p{
     font-size: 190%;
 }
+.fa-thumbs-up{
+    padding-right: 50%;
+    font-size: 150%;
+    color: blue;
+}
+.fa-thumbs-down{
+    font-size: 150%;
+    color: red;
+}
