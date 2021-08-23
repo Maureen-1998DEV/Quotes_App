@@ -11,9 +11,9 @@ p{
 .fa-thumbs-up{
     padding-right: 50%;
     font-size: 150%;
-    color: blue;
+    color: rgb(32, 32, 211);
 }
 .fa-thumbs-down{
     font-size: 150%;
-    color: red;
+    color: rgb(153, 10, 10);
 }
